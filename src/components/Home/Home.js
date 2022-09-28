@@ -23,11 +23,25 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="breck-info">
-                        <p>10s</p>
-                        <p>20s</p>
-                        <p>30s</p>
-                        <p>40s</p>
-                        <p>50s</p>
+                        <h1>Add a break time !!</h1>
+                        <div>
+                            <p>101s</p>
+                            <p>20s</p>
+                            <p>30s</p>
+                            <p>40s</p>
+                            <p>50s</p>
+                        </div>
+                    </div>
+                    <div className='exercise-info'>
+                        <h2>Exeecise info :</h2>
+                        <div className='time'>
+                            <p>Exercose time</p>
+                            <p>0 seconds</p>
+                        </div>
+                        <div className='time'>
+                            <p>Exercise time</p>
+                            <p>0 seconds</p>
+                        </div>
                     </div>
                 </div>
 

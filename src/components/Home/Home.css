@@ -14,7 +14,7 @@
 .cart-container {
     position: sticky;
     background-color: rgb(150, 167, 182);
-    padding: 40px 20px;
+    padding: 30px 20px;
 }
 
 .cart-container img {
@@ -61,4 +61,13 @@
     font-size: 20px;
     border-radius: 50%;
     background-color: white
+}
+
+.time {
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    margin-top: 15px;
+    border-radius: 14px;
+    font-weight: bold;
 }

@@ -14,7 +14,8 @@
 .exercise-container button {
     width: 100%;
     padding: 10px 15px;
-    background-color: fuchsia;
+    background-color: rgb(12, 83, 214);
+    border-radius: 15px;
     color: white;
     font-weight: 600;
 
