@@ -2,7 +2,9 @@ import React from 'react';
 import './Exercise.css'
 
 const Exercise = (props) => {
-    const { picture, time, price, name } = props.exercise;
+    // console.log(props);
+    const { handleTime } = props
+    const { picture, time, price, name, id } = props.exercise;
     return (
         <div>
             <div className='exercise-container'>
@@ -11,7 +13,7 @@ const Exercise = (props) => {
                     <h3>{name}</h3>
                     <p><strong>Price : ${price}</strong></p>
                     <p><strong>Time : {time}s</strong></p>
-                    <button> Add to List </button>
+                    <button onClick={() => handleTime(id)} > Add to List </button>
                 </div>
             </div>
         </div>

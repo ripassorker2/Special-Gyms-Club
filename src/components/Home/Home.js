@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Exercises from '../Exercises/Exercises';
 import './Home.css'
 
 const Home = () => {
+    const [exercises, setExercises] = useState([])
+    const [time, setTime] = useState(0)
+
+    useEffect(() => {
+        fetch('data.json')
+            .then(res => res.json())
+            .then(data => setExercises(data))
+    }, [])
+
+
+
+    const handleTime = (id) => {
+        console.log('clicked', id);
+    }
     return (
         <div>
             <div className="main-container">
                 <div className="body-container">
-                    <Exercises></Exercises>
+                    <Exercises handleTime={handleTime} exercises={exercises} ></Exercises>
                 </div>
                 <div className="cart-container">
                     <div className='user-info'>
@@ -22,9 +36,9 @@ const Home = () => {
                             <p>Age : 53 years</p>
                         </div>
                     </div>
-                    <div className="breck-info">
-                        <h1>Add a break time !!</h1>
-                        <div>
+                    <div >
+                        <h2>Add a break time !!</h2>
+                        <div className="breck-info">
                             <p>101s</p>
                             <p>20s</p>
                             <p>30s</p>
@@ -42,6 +56,9 @@ const Home = () => {
                             <p>Exercise time</p>
                             <p>0 seconds</p>
                         </div>
+                    </div>
+                    <div className='btn'>
+                        <button>Completed Event</button>
                     </div>
                 </div>
 
