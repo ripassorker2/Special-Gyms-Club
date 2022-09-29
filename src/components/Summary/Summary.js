@@ -15,7 +15,14 @@ const Summary = ({ times }) => {
     }
     const addBreakTime = (time) => {
         setBreakTime(time)
+        localStorage.setItem('time', time)
     }
+    useState(() => {
+        const prevTime = localStorage.getItem('time')
+        if (prevTime) {
+            setBreakTime(prevTime);
+        }
+    }, [])
 
     return (
         <div>
