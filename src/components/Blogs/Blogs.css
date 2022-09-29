@@ -2,6 +2,7 @@
 
     background-color: antiquewhite;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .blogs-container h1 {
@@ -17,7 +18,7 @@
 }
 
 .blog {
-    color: white;
+    color: black;
     padding: 20px;
     background: rgb(170, 156, 156);
     border-radius: 20px;
