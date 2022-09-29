@@ -10,3 +10,9 @@
     margin: 50px;
 
 }
+
+.summary {
+    position: sticky;
+    top: 0;
+    right: 0;
+}

@@ -15,7 +15,6 @@ const Home = () => {
 
 
     const handleTime = (exercise) => {
-        console.log(exercise);
         const newTime = [...times, exercise]
         setTime(newTime)
     }
