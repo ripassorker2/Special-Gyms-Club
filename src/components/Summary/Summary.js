@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import './Summary.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Summary = ({ times }) => {
+    const notify = () => toast("Wow !! Completed all Events");
+
     const [breakTime, setBreakTime] = useState(0)
 
     let totalTime = 0;
@@ -41,7 +46,8 @@ const Summary = ({ times }) => {
                     </div>
                 </div>
                 <div className='btn'>
-                    <button>Completed Event</button>
+                    <button onClick={notify}>Completed Event</button>
+                    <ToastContainer></ToastContainer>
                 </div>
             </div>
         </div>
