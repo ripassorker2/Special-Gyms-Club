@@ -13,7 +13,7 @@ const Exercise = (props) => {
                     <h3>{name}</h3>
                     <p><strong>Price : ${price}</strong></p>
                     <p><strong>Time : {time}s</strong></p>
-                    <button onClick={() => handleTime(id)} > Add to List </button>
+                    <button onClick={() => handleTime(props.exercise)} > Add to List </button>
                 </div>
             </div>
         </div>

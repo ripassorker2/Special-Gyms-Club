@@ -3,6 +3,7 @@ import Exercise from '../Exercise/Exercise';
 import './Exercises.css'
 
 const Exercises = ({ handleTime, exercises }) => {
+
     return (
         <div>
             <h1>Special Gyms Club !!!</h1>
