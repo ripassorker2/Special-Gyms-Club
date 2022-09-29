@@ -2,9 +2,8 @@ import React from 'react';
 import './Exercise.css'
 
 const Exercise = (props) => {
-    // console.log(props);
     const { handleTime } = props
-    const { picture, time, price, name, id } = props.exercise;
+    const { picture, time, price, name, } = props.exercise;
     return (
         <div>
             <div className='exercise-container'>
