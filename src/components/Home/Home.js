@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Blogs from '../Blogs/Blogs';
 import Exercises from '../Exercises/Exercises';
 import Summary from '../Summary/Summary';
 import './Home.css'
@@ -30,7 +31,9 @@ const Home = () => {
                 </div>
 
             </div>
-
+            <div>
+                <Blogs></Blogs>
+            </div>
         </div>
     );
 };

@@ -1,0 +1,25 @@
+.blogs-container {
+
+    background-color: antiquewhite;
+    margin-top: 50px;
+}
+
+.blogs-container h1 {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.all-blogs {
+    width: 90%;
+    margin: auto;
+    ;
+}
+
+.blog {
+    color: white;
+    padding: 20px;
+    background: rgb(170, 156, 156);
+    border-radius: 20px;
+    margin-top: 20px;
+}

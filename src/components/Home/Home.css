@@ -7,12 +7,45 @@
 
 .body-container {
     width: 90%;
-    margin: 50px;
+    margin: auto;
+    /* margin: 50px; */
 
 }
 
 .summary {
     position: sticky;
     top: 0;
-    right: 0;
+
+}
+
+
+
+@media screen and (max-width: 990px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+    .body-container {
+        margin-left: 70px;
+    }
+
+    .summary {
+        margin-top: 100px;
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+
+    .body-container {
+        margin-left: 100px;
+    }
+
+    .summary {
+        margin-top: 100px;
+    }
+
 }
